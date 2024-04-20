@@ -18,6 +18,6 @@ export const computeProductTotalPrice = (
 
   return {
     ...product,
-    totalPrice,
+    totalPrice: Number(product.basePrice) - totalPrice,
   };
 };
