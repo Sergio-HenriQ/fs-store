@@ -1,33 +1,17 @@
+import { CATEGORY_ICON } from "@/app/constants/category-icon";
 import { Badge } from "@/components/ui/badge";
 import { Category } from "@prisma/client";
-import {
-  HeadphonesIcon,
-  KeyboardIcon,
-  MonitorIcon,
-  MouseIcon,
-  SpeakerIcon,
-  SquareIcon,
-} from "lucide-react";
-
 interface CategoryItemProps {
   category: Category;
 }
 
 const CategoryItem = ({ category }: CategoryItemProps) => {
-  const categoryIcon = {
-    keyboards: <KeyboardIcon />,
-    monitors: <MonitorIcon />,
-    headphones: <HeadphonesIcon />,
-    mousepads: <SquareIcon />,
-    speakers: <SpeakerIcon />,
-    mouses: <MouseIcon />,
-  };
   return (
     <Badge
       variant="outline"
       className="flex items-center justify-center gap-2 rounded-lg py-3"
     >
-      {categoryIcon[category.slug as keyof typeof categoryIcon]}
+      {CATEGORY_ICON[category.slug as keyof typeof CATEGORY_ICON]}
       <span className="text-xs font-bold">{category.name}</span>
     </Badge>
   );
