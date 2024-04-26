@@ -2,12 +2,7 @@
 
 import { ProductWithTotalPrice } from "@/helpers/product";
 
-import {
-  ArrowDownIcon,
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  TruckIcon,
-} from "lucide-react";
+import { ArrowLeftIcon, ArrowRightIcon, TruckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import DiscountBadge from "@/components/ui/discount-badge";
