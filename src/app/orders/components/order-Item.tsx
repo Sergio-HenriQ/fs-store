@@ -48,7 +48,7 @@ const OrderItem = ({ order }: OrderItemProps) => {
         <AccordionItem value={order.id}>
           <AccordionTrigger className="px-5 text-start">
             <div className="flex flex-col">
-              <p className="text-sm font-bold">
+              <p className="font-bold uppercase">
                 Pedido com {order.orderProducts.length} produto(s)
               </p>
               <span className="text-sm opacity-60">
