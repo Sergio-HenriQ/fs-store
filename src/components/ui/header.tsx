@@ -7,6 +7,8 @@ import {
   LogOutIcon,
   MenuIcon,
   PercentIcon,
+  ShoppingBasketIcon,
+  ShoppingCart,
   ShoppingCartIcon,
 } from "lucide-react";
 import { Button } from "./button";
@@ -120,6 +122,18 @@ const Header = () => {
                 >
                   <ListOrderedIcon size={16} />
                   Catálogo
+                </Button>
+              </Link>
+            </SheetClose>
+
+            <SheetClose asChild>
+              <Link href="/orders">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-2"
+                >
+                  <ShoppingBasketIcon size={16} />
+                  Meus pedidos
                 </Button>
               </Link>
             </SheetClose>
