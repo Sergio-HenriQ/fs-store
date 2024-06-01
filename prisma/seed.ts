@@ -15,6 +15,21 @@ async function main() {
 
     const mouses = [
       {
+        name: "Logitech M720 Triathlon",
+        slug: "logitech-m720-triathlon",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+        imageUrls: [
+          "https://utfs.io/f/a3a49bb4-e7a2-49b9-b031-0be732c01663-j0xzh3.png",
+          "https://utfs.io/f/c6071a82-3a3a-4d84-87a8-41f2710ec069-akzgs6.png",
+          "https://utfs.io/f/d3aa0e6f-2005-48ac-8e6d-2a0bdd2f8992-250y39.png",
+          "https://utfs.io/f/789b28c2-bc91-4402-9cd6-0ff622f9e27a-6axklo.png",
+        ],
+        basePrice: 352,
+        categoryId: mousesCategory.id,
+        discountPercentage: 10, // 10% discount
+      },
+      {
         name: "Logitech MX Master 3s",
         slug: "logitech-mx-master-3s",
         description:
