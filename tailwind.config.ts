@@ -10,17 +10,18 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      "2xl": "1400px",
+    },
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       backgroundImage: {
         "category-item-gradient":
           "linear-gradient(45deg, #5033C3 0%, rgba(80, 51, 195, 0.20) 100%)",
+        "offer-banner": "url('/public/banner-ofertas.png')",
       },
       colors: {
         border: "hsl(var(--border))",
