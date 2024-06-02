@@ -30,10 +30,10 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
   };
 
   return (
-    <div className="flex flex-col px-5">
-      <h2 className="text-lg">{product.name}</h2>
+    <div className="flex flex-col px-5 2xl:h-[670px] 2xl:w-[472px] 2xl:rounded-lg 2xl:bg-accent 2xl:p-5">
+      <h2 className="text-lg 2xl:text-2xl">{product.name}</h2>
       <div className="flex items-center gap-2">
-        <h1 className="text-lg font-bold">
+        <h1 className="text-lg font-bold 2xl:text-2xl">
           R$ {product.totalPrice.toFixed(2)}
         </h1>
         {product.discountPercentage > 0 && (
@@ -41,7 +41,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         )}
       </div>
       {product.discountPercentage > 0 && (
-        <p className="text-sm line-through opacity-75">
+        <p className="text-sm line-through opacity-75 2xl:text-base">
           R$ {Number(product.basePrice).toFixed(2)}
         </p>
       )}
@@ -50,6 +50,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           size={"icon"}
           variant="outline"
           onClick={handleDecreaseQuantityClick}
+          className="2xl:border-[#2a2a2a] 2xl:bg-accent 2xl:hover:bg-background"
         >
           <ArrowLeftIcon size={16} />
         </Button>
@@ -60,6 +61,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           size={"icon"}
           variant="outline"
           onClick={handleIncreaseQuantityClick}
+          className="2xl:border-[#2a2a2a] 2xl:bg-accent 2xl:hover:bg-background"
         >
           <ArrowRightIcon size={16} />
         </Button>
@@ -76,7 +78,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         Adicionar ao carrinho
       </Button>
 
-      <div className="mt-5 flex items-center justify-between rounded-lg bg-accent px-5 py-2">
+      <div className="mt-5 flex items-center justify-between rounded-lg bg-accent px-5 py-2 2xl:bg-[#2A2A2A]">
         <div className="flex items-center gap-2">
           <TruckIcon />
 
