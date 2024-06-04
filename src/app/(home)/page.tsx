@@ -49,7 +49,7 @@ export default async function Home() {
             alt="Até 55% de desconto esse mês!"
             className=" h-auto w-full px-5 2xl:hidden"
           />
-          <div className="px-5 2xl:w-full">
+          <div className="px-5 2xl:px-0">
             <Categories />
           </div>
 
@@ -58,16 +58,16 @@ export default async function Home() {
             <ProductList products={deals} />
           </div>
 
-          <div className="hidden 2xl:flex">
+          <div className="hidden 2xl:flex 2xl:gap-8">
             <PromoBanner
               src="/banner-home-02.png"
               alt="Até 55% de desconto em mouses!"
-              className="h-[215px] grow px-5"
+              className="h-[215px] grow"
             />
             <PromoBanner
               src="/banner-home-03.png"
               alt="Até 20% de desconto em mouses!"
-              className="h-[215px] grow px-5"
+              className="h-[215px] grow"
             />
           </div>
           <PromoBanner
@@ -85,7 +85,7 @@ export default async function Home() {
               alt="Frete grátis para todo o Brasil."
               width={0}
               height={0}
-              className="h-[250px] w-full object-cover px-5"
+              className="h-[250px] w-full object-cover"
               sizes="100vw"
             />
           </div>
