@@ -44,20 +44,22 @@ const OrderItem = ({ order }: OrderItemProps) => {
 
   return (
     <div className="flex flex-col items-center">
-      <Accordion type="single" collapsible className="w-[330px]">
-        <AccordionItem value={order.id}>
-          <AccordionTrigger className="px-5 text-start">
-            <div className="flex flex-col">
-              <p className="text-sm font-bold uppercase">
-                Pedido com {order.orderProducts.length} produto(s)
-              </p>
-              <span className="text-xs opacity-60">
-                Feito em {format(order.createdAt, "d/MM/y 'ás' HH:mm")}
-              </span>
+      <Accordion type="single" collapsible className="w-[330px] 2xl:w-[1240px]">
+        <AccordionItem value={order.id} className="2xl:relative">
+          <AccordionTrigger className="px-5 text-start 2xl:h-[105px]">
+            <div className="2xl:flex 2xl:h-[45px] 2xl:w-[1000px]">
+              <div className="flex flex-col 2xl:my-auto">
+                <p className="text-sm font-bold uppercase">
+                  Pedido com {order.orderProducts.length} produto(s)
+                </p>
+                <span className="text-xs opacity-60">
+                  Feito em {format(order.createdAt, "d/MM/y 'ás' HH:mm")}
+                </span>
+              </div>
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <div className="flex justify-between px-5 pb-5 text-xs">
+            <div className="flex justify-between px-5 pb-5 text-xs 2xl:absolute 2xl:left-[400px] 2xl:top-10 2xl:gap-[130px]">
               <div className="flex flex-col">
                 <div className="font-bold">
                   <p>STATUS</p>
