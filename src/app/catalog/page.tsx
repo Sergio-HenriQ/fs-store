@@ -9,10 +9,7 @@ const CatalogPage = async () => {
   return (
     <div className="flex flex-col p-5">
       <div className="2xl:m-auto 2xl:w-[1240px] 2xl:max-w-[1240px]">
-        <Badge
-          className="w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
-          variant={"outline"}
-        >
+        <Badge variant="heading">
           <ShapesIcon size={16} />
           Catálogo
         </Badge>
